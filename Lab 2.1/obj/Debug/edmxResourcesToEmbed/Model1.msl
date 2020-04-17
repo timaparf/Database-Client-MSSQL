@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Trade_Of_UkraineModelContainer" CdmEntityContainer="Trade_Of_UkraineEntities">
+    <EntitySetMapping Name="Company11">
+      <EntityTypeMapping TypeName="Trade_Of_UkraineModel.Company11">
+        <MappingFragment StoreEntitySet="Trading_Company">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="TradingScaleId" ColumnName="TradingScaleId" />
+          <ScalarProperty Name="NumberOfShops" ColumnName="NumberOfShops" />
+          <ScalarProperty Name="HeadCity" ColumnName="HeadCity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Company">
+      <EntityTypeMapping TypeName="Trade_Of_UkraineModel.Company">
+        <MappingFragment StoreEntitySet="Trade_Company">
+          <ScalarProperty Name="HeadCity" ColumnName="HeadCity" />
+          <ScalarProperty Name="NumberOfShops" ColumnName="NumberOfShops" />
+          <ScalarProperty Name="TradingScaleId" ColumnName="TradingScaleId" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Scale">
+      <EntityTypeMapping TypeName="Trade_Of_UkraineModel.Scale">
+        <MappingFragment StoreEntitySet="Trade_Scales">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

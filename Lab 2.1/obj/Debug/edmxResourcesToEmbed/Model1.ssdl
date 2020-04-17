@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Trade_Of_UkraineModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Trade_Company">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Owner" Type="nvarchar(max)" />
+    <Property Name="TradingScaleId" Type="int" />
+    <Property Name="NumberOfShops" Type="int" />
+    <Property Name="HeadCity" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Trade_Scales">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Trading_Company">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Owner" Type="nvarchar(max)" />
+    <Property Name="TradingScaleId" Type="int" />
+    <Property Name="NumberOfShops" Type="int" />
+    <Property Name="HeadCity" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="Хранилище Trade_Of_UkraineModelContainer">
+    <EntitySet Name="Trade_Company" EntityType="Self.Trade_Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Trade_Scales" EntityType="Self.Trade_Scales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Trading_Company" EntityType="Self.Trading_Company" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
